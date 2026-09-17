@@ -1,0 +1,380 @@
+/* ================= RESET & BASIC STYLES ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ================= HEADER SECTION ================= */
+.header-top {
+    padding: 25px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.header-top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #252525;
+}
+
+.logo h2 span {
+    color: #e7ab3c;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ebebeb;
+    height: 45px;
+    width: 500px;
+}
+
+.search-bar select {
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+    background: transparent;
+    cursor: pointer;
+    border-right: 1px solid #ebebeb;
+    height: 100%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    width: 100%;
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
+.search-bar button {
+    background: #e7ab3c;
+    border: none;
+    width: 50px;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    color: #252525;
+}
+
+.header-icons a {
+    position: relative;
+}
+
+/* Main Navigation */
+.main-nav {
+    background-color: #252525;
+}
+
+.main-nav .container {
+    display: flex;
+    align-items: center;
+}
+
+.all-departments {
+    background-color: #191919;
+    color: #fff;
+    padding: 15px 25px;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #e7ab3c;
+}
+
+/* ================= BREADCRUMB ================= */
+.breadcrumb-section {
+    padding: 20px 0;
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
+.breadcrumb-section a {
+    color: #252525;
+    margin-right: 5px;
+}
+
+.breadcrumb-section i {
+    margin-right: 5px;
+}
+
+/* ================= PRODUCT GRID ================= */
+.product-section {
+    padding: 20px 0 60px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.product-card {
+    text-align: center;
+}
+
+.product-img {
+    position: relative;
+    background-color: #f7f7f7;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img img {
+    max-height: 90%;
+    max-width: 90%;
+    object-fit: contain;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e7ab3c;
+    color: #fff;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    font-weight: 700;
+}
+
+.product-content {
+    padding-top: 15px;
+}
+
+.product-cat {
+    font-size: 12px;
+    color: #b2b2b2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.product-title {
+    font-size: 16px;
+    color: #e7ab3c;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #e7ab3c;
+    font-weight: 700;
+}
+
+/* ================= PARTNER LOGOS ================= */
+.partner-section {
+    background-color: #303030;
+    padding: 30px 0;
+}
+
+.partner-section .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partner-logo {
+    color: #a6a6a6;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.7;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #191919;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.footer-main {
+    padding: 60px 0 40px 0;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 30px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-logo h2 span {
+    color: #e7ab3c;
+}
+
+.footer-contact-info p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    width: 36px;
+    height: 36px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #e7ab3c;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a:hover {
+    color: #e7ab3c;
+}
+
+.newsletter-col p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.newsletter-form {
+    display: flex;
+    height: 45px;
+}
+
+.newsletter-form input {
+    width: 100%;
+    border: none;
+    background: #333;
+    padding: 0 15px;
+    color: #fff;
+    outline: none;
+}
+
+.newsletter-form button {
+    background: #e7ab3c;
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    padding: 20px 0;
+}
+
+.footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom p i {
+    color: #e7ab3c;
+}
+
+.payment-methods {
+    display: flex;
+    gap: 8px;
+}
+
+.payment-card {
+    background: #fff;
+    color: #191919;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 2px;
+    font-style: italic;
+}
